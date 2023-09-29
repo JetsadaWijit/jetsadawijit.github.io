@@ -1,0 +1,79 @@
+body {
+    background-color: rgb(111, 137, 209);
+}
+
+/* IMG-logo */
+.container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+.container img {
+    display: block;
+    padding: 5px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.atext {
+    animation: colorChange 5s infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        color: rgb(0, 0, 0);
+    }
+    25% {
+        color: rgb(20, 151, 134)
+    }
+    50% {
+        color: rgb(68, 66, 216);
+    }
+    75% {
+        color: rgb(211, 111, 231);
+    }
+    100% {
+        color: rgb(255, 255, 255);
+    }
+}
+
+.img-logo {
+    height: 50px;
+    width: 50px;
+}
+
+/* a */
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: #fff;
+}
+
+a.agithub:hover, a.agithub:active {
+    color: black;
+}
+
+a.agitlab:hover, a.agitlab:active {
+    color: orange;
+}
+
+/* Picture */
+.picmy {
+    text-align: center;
+}
+
+.picmy-o {
+    border: 5px solid #555;
+    border-radius: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 140px;
+}
