@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(111, 137, 209);
+    background-color: rgb(190, 195, 211);
 }
 
 /* IMG-logo */
@@ -47,20 +47,12 @@ body {
 }
 
 /* a */
-a:link {
+a:link, a:visited {
     color: white;
 }
 
-a:visited {
-    color: #fff;
-}
-
-a.agithub:hover, a.agithub:active {
-    color: black;
-}
-
-a.agitlab:hover, a.agitlab:active {
-    color: orange;
+a:hover {
+    color: blue;
 }
 
 /* Picture */
