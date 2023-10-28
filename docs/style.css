@@ -49,6 +49,12 @@ body {
     width: 50px;
 }
 
+.img-logo-donation {
+    height: 80px;
+    width: 180px;
+    border-radius: 130px;
+}
+
 /* a */
 a:link, a:visited {
     color: white;
