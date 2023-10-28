@@ -9,6 +9,10 @@ body {
     text-align: center;
 }
 
+.container div{
+    color: white;
+}
+
 .container img {
     display: block;
     padding: 5px;
