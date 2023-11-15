@@ -1,5 +1,61 @@
 body {
     background-color: rgb(190, 195, 211);
+    margin-top: 20vh;
+}
+
+header {
+    margin-left: 78vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #727272;
+    width: 15%;
+    padding: 10px;
+    border-radius: 250px;
+}
+
+.logo {
+    width: 64px;
+    height: 64px;
+    background-color: #333;
+    border-radius: 50%;
+    background-image: url('https://i.imgur.com/nSeavqM.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.home {
+    height: 50px;
+    width: 50px;
+    background-image: url('https://i.imgur.com/1qyIKGs.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.repository {
+    height: 50px;
+    width: 50px;
+    background-image: url('https://i.imgur.com/HRuhLGE.png');
+    background-size: cover;
+    background-position: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+/* Centering the logo */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Adjusting spacing */
+nav > * {
+    margin: 0 20px;
 }
 
 /* IMG-logo */
@@ -20,28 +76,6 @@ body {
     margin: 0 auto;
     padding-right: 25px;
     padding-left: 25px;
-}
-
-.atext {
-    animation: colorChange 5s infinite;
-}
-
-@keyframes colorChange {
-    0% {
-        color: rgb(0, 0, 0);
-    }
-    25% {
-        color: rgb(20, 151, 134)
-    }
-    50% {
-        color: rgb(68, 66, 216);
-    }
-    75% {
-        color: rgb(211, 111, 231);
-    }
-    100% {
-        color: rgb(255, 255, 255);
-    }
 }
 
 .img-logo {
