@@ -4,6 +4,7 @@ container.className = 'container';
 
 // Create the 'header' element with the necessary attributes
 const header = document.createElement('header');
+header.innerHTML = `Hi`
 header.setAttribute('home', 'https://jetsadawijit.github.io');
 header.setAttribute('logo-link', 'https://jetsadawijit.gitlab.io');
 header.setAttribute('logo-pic', 'https://i.imgur.com/nSeavqM.jpg');

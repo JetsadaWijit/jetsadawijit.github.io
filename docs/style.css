@@ -3,6 +3,10 @@ body {
     margin-top: 20vh;
 }
 
+header {
+    margin-left: 77vh;
+}
+
 /* IMG-logo */
 .container {
     display: flex;
