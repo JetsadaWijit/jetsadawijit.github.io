@@ -5,12 +5,16 @@ body {
 
 .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+    margin-bottom: 20px;
 }
 
-.container div{
+.container div {
     color: white;
+    margin: 10px;
+    flex: 1 1 200px;
 }
 
 .container img {
@@ -18,8 +22,6 @@ body {
     padding: 5px;
     padding-top: 15px;
     margin: 0 auto;
-    padding-right: 25px;
-    padding-left: 25px;
 }
 
 .img-logo {
@@ -38,10 +40,41 @@ a:hover {
 
 .bg-inset {
     height: 100%;
-    width: 50%;
+    width: 80%;
     background-color: white;
     border: 5px inset;
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
+    margin: 0 auto;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    body {
+        margin-top: 10vh;
+    }
+    
+    .container {
+        flex-direction: column;
+    }
+
+    .bg-inset {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .img-logo {
+        height: 40px;
+        width: 40px;
+    }
+
+    .container div {
+        flex: 1 1 150px;
+    }
+
+    .bg-inset {
+        width: 95%;
+    }
 }
