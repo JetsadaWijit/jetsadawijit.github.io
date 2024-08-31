@@ -1,6 +1,11 @@
 body {
     background-color: rgb(190, 195, 211);
     margin-top: 20vh;
+    transition: background-color 0.5s ease;
+}
+
+body:hover {
+    background-color: rgb(170, 180, 200);
 }
 
 /* IMG-logo */
@@ -10,7 +15,7 @@ body {
     text-align: center;
 }
 
-.container div{
+.container div {
     color: white;
 }
 
@@ -21,6 +26,7 @@ body {
     margin: 0 auto;
     padding-right: 25px;
     padding-left: 25px;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 .img-logo {
@@ -31,10 +37,16 @@ body {
 /* a */
 a:link, a:visited {
     color: white;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 a:hover {
     color: blue;
+    transform: scale(1.1);
+}
+
+.img-logo:hover {
+    animation: bounce 1s;
 }
 
 .bg-inset {
@@ -45,4 +57,27 @@ a:hover {
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
+    animation: expand 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes expand {
+    from { transform: scale(0.95); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
 }
