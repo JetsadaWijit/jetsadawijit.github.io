@@ -13,6 +13,7 @@ body:hover {
     display: flex;
     justify-content: center;
     text-align: center;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
 .container div {
@@ -34,7 +35,6 @@ body:hover {
     width: 50px;
 }
 
-/* a */
 a:link, a:visited {
     color: white;
     transition: color 0.3s ease, transform 0.3s ease;
@@ -80,4 +80,43 @@ a:hover {
 @keyframes expand {
     from { transform: scale(0.95); opacity: 0; }
     to { transform: scale(1); opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    body {
+        margin-top: 10vh; /* Reduce margin on smaller screens */
+    }
+
+    .container img {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .img-logo {
+        height: 40px;
+        width: 40px; /* Smaller logo size on tablets */
+    }
+
+    .bg-inset {
+        width: 80%; /* Adjust width to be more fluid */
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        margin-top: 5vh; /* Further reduce margin on very small screens */
+    }
+
+    .img-logo {
+        height: 30px;
+        width: 30px; /* Even smaller logo size on phones */
+    }
+
+    .bg-inset {
+        width: 90%; /* Make the container almost full-width */
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 }
