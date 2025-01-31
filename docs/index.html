@@ -10,11 +10,13 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9416724455427449" crossorigin="anonymous"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Script -->
+     <script src="https://jetsadawijit.github.io/bootstrap/v/1/script/header.js"></script>
     <!-- Title -->
     <title>Jetsada Wijit</title>
 </head>
 <body>
-    <div id="header-container"></div>
+    <div class="header" github-website-link="https://jetsadawijit.github.io" gitlab-website-link="https://jetsadawijit.gitlab.io"></div>
     <!-- <header home="https://jetsadawijit.github.io" logo-link="https://jetsadawijit.gitlab.io" logo-pic="https://i.imgur.com/nSeavqM.jpg" repository="https://github.com/JetsadaWijit/JetsadaWijit.github.io"></header>
     <script src="https://jetsadawijit.github.io/bootstrap/script/header.js"></script>
     <br> -->
@@ -42,12 +44,5 @@
         <div><a href="https://modrinth.com/user/JetsadaWijit"><img class="img-logo" src="https://modrinth.com/favicon-light.ico" alt="logo">modrinth</a></div>
         <div><a href="https://www.spigotmc.org/members/hon1199.668666/"><img class="img-logo" src="https://static.spigotmc.org/img/spigot-og.png" alt="logo">spigotmc</a></div>
     </div>
-
-    <script>
-        // Load footer dynamically
-        fetch("header.html")
-            .then(response => response.text())
-            .then(data => document.getElementById("header-container").innerHTML = data);
-    </script>
 </body>
 </html>
